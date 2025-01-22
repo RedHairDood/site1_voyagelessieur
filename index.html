@@ -4,74 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voyage LeSieur</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
+    <!--------------------------------------------------------
+     header
+    --------------------------------------------------------->
+
     <header>
         <div class="wrapper">
-          <img src="images/logo1.png" alt="logo">
+            <a href="index.html">
+                <img src="images/logo1.png" alt="logo">
+                <p>Voyage LeSIEUR</p>
+            </a>
 
-            <h2>Voyage LeSIEUR</h2>
-
-            <ul>
-                <li><a href="">Magasiner</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>  
+            <nav>
+                <ul>
+                    <li><a href="">Magasiner</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>  
+            </nav> 
         </div>    
     </header>
 
-    <section class="hero">
+
+    <!--------------------------------------------------------
+     bannière
+    --------------------------------------------------------->
+
+    <section class="banniere">
         <div class="wrapper">
            <h1>Trouver tout pour le voyage!</h1> 
         </div> 
     </section>
 
-    <section class="contenu">
-        <div class="wrapper">
-            <div class="box">
-                <h4>Transports</h4>
 
-                <img src="images/icone-plus1.png" alt="plus">  
+    <!--------------------------------------------------------
+     contenu 
+    --------------------------------------------------------->
+
+    <section class="transport">
+        <div class="wrapper">
+            <div class="titre-section">
+                <h2>Transports</h2>
+                <img class="js-plus" src="images/icone-plus1.png" alt="bouton plus">  
             </div>
             
-            <div class="box">
-                <div class="carte">
-                    <img src="images/avion1.jpg" alt="avion">
+            <div class="conteneur-transport">
+                <article>
+                    <img src="images/avion1.jpg" alt="forfait avion">
 
-                    <h3>Forfaits <span>avion</span></h3>
+                    <h3>Forfaits <strong>avion</strong></h3>
 
                     <p>Voyager rapidement et confortablement</p>
-                </div>
+                </article>
 
-                <div class="carte">
-                    <img src="images/bateau1.jpg" alt="bateau">
+                <article>
+                    <img src="images/bateau1.jpg" alt="forfait bateau">
 
-                    <h3>Forfaits <span>croisière</span></h3>
+                    <h3>Forfaits <strong>croisière</strong></h3>
 
                     <p>Laissez-vous porter par les vagues</p>
-                </div>
+                </article>
 
-                <div class="carte">
-                    <img src="images/auto1.jpg" alt="voiture">
+                <article>
+                    <img src="images/auto1.jpg" alt="forfait auto">
 
-                    <h3>Forfaits <span>voiture</span></h3>
+                    <h3>Forfaits <strong>voiture</strong></h3>
 
                     <p>Voitures de luxe pour plus de confort</p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
+
+    <!--------------------------------------------------------
+     footer
+    --------------------------------------------------------->
+
     <footer>
         <div class="wrapper">
-            <p>Voyage LeSieur</p>
+            <h4>Voyage LeSieur</h4>
 
-            <ul>
-                <li><a href=""><img src="images/facebook-nb1.jpg" alt="facebook"></a></li>
-                <li><a href=""><img src="images/twitter-nb1.jpg" alt="twitter"></a></li>
-                <li><a href=""><img src="images/linkedin-nb1.jpg" alt="linkedin"></a></li>
-                <li><a href=""><img src="images/pinterest-nb1.jpg" alt="pinterest"></a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li class="facebook"><a href=""></a></li>
+                    <li class="twitter"><a href=""></a></li>
+                    <li class="linkedin"><a href=""></a></li>
+                    <li class="pinterest"><a href=""></a></li>
+                </ul>  
+            </nav>
         </div>
     </footer>
 </body>
