@@ -1,5 +1,5 @@
 /*=============================================================
-GENERIC
+BASE
 =============================================================*/
 
 html{
@@ -13,53 +13,27 @@ html{
 
 
 /*=============================================================
-ÉLÉMENTS
+GÉNERIQUE
 =============================================================*/
-
-
-
-/*-----Base-----*/
-
-body{
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: black;
-    padding: 0;
-    margin: 0;
-}
-
 
 .wrapper{
     max-width: 1080px;
-    margin-right: auto;
-    margin-left: auto;
+    margin:0 auto;
 }
 
+body{
+    margin: 0; 
+    padding: 0;
 
-/*-----Éléments texte-----*/
-h1{
-    font-weight: 100;
-    font-size: 36px;
-    letter-spacing: 20%;
-}
+    font-family: "Roboto", serif;
+    font-size: 18px;
 
-p{
-    color: white;
-    font-size: 36px;
-    font-weight: 700;
+    background-color: white;
 }
 
 a{
     text-decoration: none;
 }
-
-li{
-    list-style: none;
-}
-
-
 
 
 
@@ -68,13 +42,182 @@ COMPONENTS
 =============================================================*/
 
 
-
-/*-----Header-----*/
+/*-----HEADER-----*/
 
 header{
     background-color: #F26C25;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo p{
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 40px;
+}
+
+nav a{
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
+/*-----SECTION BANNIERE-----*/
 
 .banniere{
     background-color: #EEEEEE;
 }
+
+.banniere .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.banniere h1{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 7.2px;
+}
+
+
+/*-----SECTION TRANSPORT-----*/
+
+.transport{
+    padding-bottom: 80px;
+}
+
+.titre-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+
+    background-color: #EEEEEE;
+
+    border: 1px solid #d0d0d0d0;
+
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.titre-section h2{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.titre-section img{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.conteneur-transport{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.conteneur-transport h3{
+    font-size: 36px;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+.conteneur-transport p{
+    text-align: center;
+}
+
+/*-----FOOTER-----*/
+
+footer .wrapper ul li a{
+    display: inline-block;
+
+    width: 32px;
+    height: 32px;
+}
+
+.facebook a{
+    background-image: url("../images/facebook-nb1.jpg");
+}
+
+.twitter a{
+    background-image: url("../images/twitter-nb1.jpg");
+}
+
+.linkedin a{
+    background-image: url("../images/linkedin-nb1.jpg");
+}
+
+.pinterest a{
+    background-image: url("../images/pinterest-nb1.jpg");
+}
+
+
+.facebook a:hover{
+    background-image: url("../images/facebook-survol1.jpg");
+}
+
+.twitter a:hover{
+    background-image: url("../images/twitter-survol1.jpg");
+}
+
+.linkedin a:hover{
+    background-image: url("../images/linkedin-survol1.jpg");
+}
+
+.pinterest a:hover{
+    background-image: url("../images/pinterest-survol1.jpg");
+}
+
+
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    background-color: black;
+    height: 70px;
+}
+
+footer h4{
+    color: white;
+    font-weight: 300;
+}
+
+footer ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
